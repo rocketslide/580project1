@@ -1,0 +1,33 @@
+I like to shop
+
+An app that mines the Zappos inventory for clothing & shoes that I like.
+
+How is this any different from searching Zappos proper?
+What else can I do with the API?
+	weed out the crap I will never wear
+	
+
+
+API key: 
+	33fbe932da4708d8cf0439fbcb43cc428c16d8fa
+	
+
+This is what I wore, and I looked real cute.
+
+- Date
+- Where was I going?
+- The components
+	Brands
+- Where did I buy all this?
+- Picture
+- Tags
+
+Input / Output styles
+
+Password protected input
+
+
+jQuery 
+- form validation
+- jQuery date picker
+- 
