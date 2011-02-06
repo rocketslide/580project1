@@ -1,1 +1,20 @@
 * {margin: 0; padding: 0; border: 0;}
+
+body {font-family: ariel, helvetica, 'sans-serif';
+
+}
+
+#wrapper {width: 810px; margin: 20px auto; padding: 10px; background-color: #fff;}
+
+
+ul {list-style-type: none;}
+
+ul.nav {display: block;}
+li.nav {display: inline;}
+
+
+div.content {margin: 10px 0; padding: 5px 0; border-top: 1px dashed #333;}
+
+input {border: 1px dotted #333;}
+
+label {display: block; margin: 5px 0;}

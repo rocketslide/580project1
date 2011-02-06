@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>These are my shoes</title>
+        <link href="project1.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
+
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+        <h1>These are my shoes, and I totally love wearing them.</h1>
+        <nav>
+            <ul id="nav">
+            <li class="nav">Nav item</li>
+            <li class="nav">Nav item</li>
+            <li class="nav">Nav item</li>
+            </ul>
+        </nav>
+        <p>Some more text about shoes.</p>
+        
+        
+        </header>
+        <div class="content">
+            <h3 class="add">Add a new shoe!</h3>
+            <form autocomplete="on">
+                <fieldset>
+                    
+              <label>Shoe:
+                <input type="text" name="shoe_name"  autofocus="autofocus" /></label>
+               <label>Date worn:</label>
+               <div type="text" id="datepicker" ></div>
+               <label>These shoes make me feel:
+               <input type="text" name="mood"  autofocus="autofocus" /></label>
+                <label>Where did you wear them?
+                <input type="text" name="where"  autofocus="autofocus" /></label>
+                <p>More shoe info:</p>
+                <label>Where did you buy them?
+                <input type="text" name="where"  autofocus="autofocus" /></label>
+                <label>When did you buy them?
+                <input type="text" name="when"  autofocus="autofocus" /></label>
+                <label>How much?
+                <input type="text" name="cost"  autofocus="autofocus" /></label>
+                </fieldset>   
+            </form>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
