@@ -1,10 +1,15 @@
 * {margin: 0; padding: 0; border: 0;}
 
 body {font-family: ariel, helvetica, 'sans-serif';
-
+background-image:url('bg.png');
 }
 
-#wrapper {width: 810px; margin: 20px auto; padding: 10px; background-color: #fff;}
+#wrapper {width: 825px; margin: 20px auto; padding: 25px;
+background-color: rgba(255, 255, 255, 0.75);
+border: 1px solid #0e3c54;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
 
 
 ul {list-style-type: none;}
@@ -13,8 +18,13 @@ ul.nav {display: block;}
 li.nav {display: inline;}
 
 
-div.content {margin: 10px 0; padding: 5px 0; border-top: 1px dashed #333;}
+div.content {margin: 10px 0; padding: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid #0e3c54;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
 
-input {border: 1px dotted #333;}
+input {border: 1px dotted #333; margin: 5px 0;}
 
 label {display: block; margin: 5px 0;}
