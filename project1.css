@@ -2,14 +2,16 @@
 
 body {font-family: ariel, helvetica, 'sans-serif';
 background-image:url('bg.png');
+background-attachment:fixed;
 }
 
-#wrapper {width: 825px; margin: 20px auto; padding: 25px;
+#wrapper {width: 840px; margin: 20px auto; padding: 25px;
 background-color: rgba(255, 255, 255, 0.75);
 border: 1px solid #0e3c54;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;}
+
 
 
 ul {list-style-type: none;}
@@ -18,7 +20,7 @@ ul.nav {display: block;}
 li.nav {display: inline;}
 
 
-div.content {margin: 10px 0; padding: 5px;
+div.content {margin: 10px 0; padding: 20px;
 background-color: rgba(255, 255, 255, 0.8);
 border: 1px solid #0e3c54;
 -webkit-border-radius: 10px;
