@@ -3,11 +3,14 @@
     <head>
         <title>These are my shoes</title>
         <link href="project1.css" rel="stylesheet" type="text/css" />
+        <!--<link href="custom.css" rel="stylesheet" type="text/css" />-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <script src="modernizr.js"></script>
         <script>
-  $(document).ready(function() {
-    $("#datepicker").datepicker();
+
+$(document).ready(function() {
+    $('#datepicker input#dateworn').datepicker();
   });
   </script>
 
@@ -27,30 +30,55 @@
         
         
         </header>
-        <div class="content">
-            <h3 class="add">Add a new shoe!</h3>
+        <fieldset class="content">
+            <legend>Let's hear about the shoes</legend>
+            
             <form autocomplete="on">
-                <fieldset>
+                
                     
-              <label>Shoe:</label>
+              <ul id="form">
+                <li class="form">
+              <label for=shoe_name>What kind of shoe is it:</label>
                 <input type="text" name="shoe_name"  autofocus="autofocus" />
-               <label>Date worn:</label>
-               <div type="text" id="datepicker" ></div>
-               <label>These shoes make me feel:</label>
+                </li>
+                <li class="form">
+               <label for=dateworn>When did you wear it:</label>
+                <div id="datepicker">
+                <input type="text" id="dateworn" name="dateworn"/>
+                </div>
+                </li>
+                <li class="form">
+               <label for=mood>These shoes make me feel:</label>
                <input type="text" name="mood"  autofocus="autofocus" />
-                <label>Where did you wear them?</label>
+                </li>
+                <li class="form">
+                <label for=where>Where did you wear them?</label>
                 <input type="text" name="where"  autofocus="autofocus" />
-                <p>More shoe info:</p>
-                <label>Where did you buy them?</label>
-                <input type="text" name="where"  autofocus="autofocus" />
-                <label>When did you buy them?</label>
+                </li>
+                <li class="form">
+                <label for=cought>Where did you buy them?</label>
+                <input type="text" name="bought"  autofocus="autofocus" />
+                </li>
+                <li class="form">
+                <label for=when>When did you buy them?</label>
                 <input type="text" name="when"  autofocus="autofocus" />
-                <label>How much?</label>
+                </li>
+                <li class="form">
+                <label for=cost>How much?</label>
                 <input type="text" name="cost"  autofocus="autofocus" />
-                </fieldset>   
+                </li>
+                <li class="form">
+                    <label for=picture>Show us a picture!</label>
+                    <input type="file" name="picture" autofocus="autofocus" />
+                </li>   
+                <li>
+                <input type="submit" value="Stomp it" />
+                </li>
+              </ul>
+                 
             </form>
+        </fieldset>
         </div>
-        </div>
-        </div>
+    
     </body>
 </html>

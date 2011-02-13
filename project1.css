@@ -12,21 +12,49 @@ border: 1px solid #0e3c54;
 -moz-border-radius: 10px;
 border-radius: 10px;}
 
-
-
 ul {list-style-type: none;}
-
-ul.nav {display: block;}
-li.nav {display: inline;}
-
-
-div.content {margin: 10px 0; padding: 20px;
+    ul.nav {display: block;}
+    li.nav {display: inline;}
+    
+ 
+fieldset {margin: 10px 0; padding: 20px;
 background-color: rgba(255, 255, 255, 0.8);
 border: 1px solid #0e3c54;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;}
 
-input {border: 1px dotted #333; margin: 5px 0;}
+legend {font-weight: bold; background-color: #0e3c54; color: #fff; padding: 5px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-moz-box-shadow: 5px 5px 5px #888; 
+-webkit-box-shadow: 5px 5px 5px #888;
+box-shadow: 5px 5px 5px #888;}
 
-label {display: block; margin: 5px 0;}
+li.form {margin: 5px 0; padding: 5px; width: 600px;}
+li.form:nth-child(even) {border: 1px solid #333; background-color: rgba(135,171,189,0.5);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+li.form:nth-child(odd){border: 1px solid #888; background-color: rgba(135,171,189,0.25);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+
+input {border: 1px dotted #333; margin: 5px 0;  padding: 5px; width: 300px;}
+label {margin: 5px 0; float: left; width: 250px;}
+
+.ui-widget {background-color: #87abbd; font-size: .9em; }
+.ui-widget-header {background-color: #0e3c54; color: #fff; padding: 3px;}
+.ui-widget-content {padding: 3px;}
+.ui-datepicker-next {float: right; font-size: .8em;display: block;}
+.ui-datepicker-prev {float: left; font-size: .8em; display: block;}
+.ui-datepicker-title {;}
+
+/*dispaly page*/
+.content {border-top: 1px solid #333; margin-top: 10px; padding-top: 10px;}
