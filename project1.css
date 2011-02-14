@@ -4,6 +4,7 @@ body {font-family: ariel, helvetica, 'sans-serif';
 background-image:url('bg.png');
 background-attachment:fixed;
 }
+h1 {margin-bottom: 15px;}
 
 #wrapper {width: 840px; margin: 20px auto; padding: 25px;
 background-color: rgba(255, 255, 255, 0.75);
@@ -17,12 +18,16 @@ ul {list-style-type: none;}
     li.nav {display: inline;}
     
  
-fieldset {margin: 10px 0; padding: 20px;
+fieldset{margin: 10px 0; padding: 20px;
 background-color: rgba(255, 255, 255, 0.8);
 border: 1px solid #0e3c54;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;}
+
+#form fieldset:nth-child(even) {border: 1px solid #333; background-color: rgba(135,171,189,0.75);}
+#form fieldset:nth-child(odd) {border: 1px solid #333; background-color: rgba(135,171,189,0.25);}
+
 
 legend {font-weight: bold; background-color: #0e3c54; color: #fff; padding: 5px;
 -webkit-border-radius: 3px;
@@ -33,21 +38,24 @@ border-radius: 3px;
 box-shadow: 5px 5px 5px #888;}
 
 li.form {margin: 5px 0; padding: 5px; width: 600px;}
-li.form:nth-child(even) {border: 1px solid #333; background-color: rgba(135,171,189,0.5);
+
+
+input {margin: 5px 0;  padding: 5px; width: 300px;
+border: 1px solid #0e3c54;
 -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
-border-radius: 3px;
-}
+border-radius: 3px;}
 
-li.form:nth-child(odd){border: 1px solid #888; background-color: rgba(135,171,189,0.25);
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-}
-
-
-input {border: 1px dotted #333; margin: 5px 0;  padding: 5px; width: 300px;}
 label {margin: 5px 0; float: left; width: 250px;}
+
+
+.submit{margin: 5px 0; float: left; width: 250px; border: 1px solid #0e3c54;
+font-weight: bold;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;}
+
+/*datepicker*/
 
 .ui-widget {background-color: #87abbd; font-size: .9em; }
 .ui-widget-header {background-color: #0e3c54; color: #fff; padding: 3px;}
@@ -57,4 +65,17 @@ label {margin: 5px 0; float: left; width: 250px;}
 .ui-datepicker-title {;}
 
 /*dispaly page*/
-.content {border-top: 1px solid #333; margin-top: 10px; padding-top: 10px;}
+li.nav {margin: 5px;}
+p.intro {margin: 5px;}
+.content {border-top: 1px solid #333; margin-top: 10px; padding: 10px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;}
+
+.content:nth-child(even) {border: 1px solid #333; background-color: rgba(135,171,189,0.75);}
+
+.content:nth-child(odd) {border: 1px solid #888; background-color: rgba(135,171,189,0.25);}
+
+div.meta {margin: 10px 0;}
+.shoetitle {border-bottom: 1px solid #333;}
+ul.shoeinfo {float:right; margin-right: 250px;}

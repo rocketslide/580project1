@@ -10,8 +10,9 @@
         <script>
 
 $(document).ready(function() {
-    $('#datepicker input#dateworn').datepicker();
+    $('.datepicker input#dateworn').datepicker();
   });
+
   </script>
 
     </head>
@@ -21,61 +22,83 @@ $(document).ready(function() {
         <h1>These are my shoes, and I totally love wearing them.</h1>
         <nav>
             <ul id="nav">
-            <li class="nav">Nav item</li>
-            <li class="nav">Nav item</li>
-            <li class="nav">Nav item</li>
+            <li class="nav"><a href="shoes.html">See some shoes!</a></li>
             </ul>
         </nav>
-        <p>Some more text about shoes.</p>
+        <p class="intro">Fill in some info about your shoes!</p>
         
         
         </header>
-        <fieldset class="content">
+        <fieldset id="form">
             <legend>Let's hear about the shoes</legend>
             
             <form autocomplete="on">
                 
+                <fieldset class="shoe">
+                    <legend>What kind of shoe is it?</legend>
+                    <ul>
+                    <li class="shoe">
+                        <label for=brand>Brand:</label>
+                        <input type="text" name="brand" id="brand" autofocus="autofocus" />
+                    </li>
+                    <li class="shoe">
+                        <label for=type>Type of shoe:</label>
+                        <input type="text" name="type"  id="type" autofocus="autofocus" />
+                    </li>
+                    <li class="shoe">
+                        <label for=color>Color:</label>
+                        <input type="text" name="color"  id="color" autofocus="autofocus" />
+                    </li>
+                    <li class="shoe">
+                        <label for=material>Material:</label>
+                        <input type="text" name="color" id="material" autofocus="autofocus" />
+                    </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset class="worn">
+                    <legend>Talk about where you wore them</legend>
+                    <ul class="worn">
+                     <li class="worn">
+                        <label for=where>Where did you wear them?</label>
+                    <input type="text" name="where" id="where" autofocus="autofocus" />
+                </li>
+                        <li class="worn">
+                    <label for=dateworn>When did you wear it:</label>
+                    <div class="datepicker">
+                    <input type="text" id="dateworn" name="dateworn"/>
+                    </div>
+                </li>
+                        <li class="worn">
+                    <label for=mood>These shoes make me feel:</label>
+                    <input type="text" name="mood" id="mood" autofocus="autofocus" />
+                </li>
+                    </ul>
                     
-              <ul id="form">
-                <li class="form">
-              <label for=shoe_name>What kind of shoe is it:</label>
-                <input type="text" name="shoe_name"  autofocus="autofocus" />
-                </li>
-                <li class="form">
-               <label for=dateworn>When did you wear it:</label>
-                <div id="datepicker">
-                <input type="text" id="dateworn" name="dateworn"/>
-                </div>
-                </li>
-                <li class="form">
-               <label for=mood>These shoes make me feel:</label>
-               <input type="text" name="mood"  autofocus="autofocus" />
-                </li>
-                <li class="form">
-                <label for=where>Where did you wear them?</label>
-                <input type="text" name="where"  autofocus="autofocus" />
-                </li>
-                <li class="form">
-                <label for=cought>Where did you buy them?</label>
-                <input type="text" name="bought"  autofocus="autofocus" />
-                </li>
-                <li class="form">
-                <label for=when>When did you buy them?</label>
-                <input type="text" name="when"  autofocus="autofocus" />
-                </li>
-                <li class="form">
-                <label for=cost>How much?</label>
-                <input type="text" name="cost"  autofocus="autofocus" />
-                </li>
-                <li class="form">
-                    <label for=picture>Show us a picture!</label>
-                    <input type="file" name="picture" autofocus="autofocus" />
-                </li>   
-                <li>
-                <input type="submit" value="Stomp it" />
-                </li>
-              </ul>
-                 
+                </fieldset>
+                <fieldset class="details">
+                    <legend>The other details</legend>
+                    <ul class="details">
+                        <li class="details">
+                            <label for=bought>Where did you buy them?</label>
+                        <input type="text" name="bought" id="bought" autofocus="autofocus" />
+                        </li>
+                        <li class="details">
+                            <label for=when>When did you buy them?</label>
+                            <input type="text" name="when"  id="when" autofocus="autofocus" />
+                         </li>
+                        
+                        <li class="details">
+                            <label for=cost>How much?</label>
+                            <input type="text" name="cost" id="cost" autofocus="autofocus" />
+                         </li>
+                        <li class="details">
+                            <label for=picture>Show us a picture!</label>
+                            <input type="file" id="picture" name="picture" />
+                        </li> 
+                    </ul>
+                </fieldset>
+                <input type="submit" class="submit" value="Stomp it" />
             </form>
         </fieldset>
         </div>
