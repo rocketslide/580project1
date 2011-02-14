@@ -25,8 +25,8 @@ border: 1px solid #0e3c54;
 -moz-border-radius: 10px;
 border-radius: 10px;}
 
-#form fieldset:nth-child(even) {border: 1px solid #333; background-color: rgba(135,171,189,0.75);}
-#form fieldset:nth-child(odd) {border: 1px solid #333; background-color: rgba(135,171,189,0.25);}
+#form fieldset:nth-child(odd) {border: 1px solid #333; background-color: rgba(135,171,189,0.75);}
+#form fieldset:nth-child(even) {border: 1px solid #333; background-color: rgba(135,171,189,0.25);}
 
 
 legend {font-weight: bold; background-color: #0e3c54; color: #fff; padding: 5px;
@@ -49,11 +49,17 @@ border-radius: 3px;}
 label {margin: 5px 0; float: left; width: 250px;}
 
 
-.submit{margin: 5px 0; float: left; width: 250px; border: 1px solid #0e3c54;
+.submit{margin: 5px 0; float: left;
+background-color: #0e3c54; color: #fff;
+padding: 10px 0;
+width: 250px; border: 1px solid #0e3c54;
 font-weight: bold;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;}
+text-transform: uppercase;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+
+.submit:hover {background: #87abbd; color: #333; cursor: pointer;}
 
 /*datepicker*/
 
@@ -63,6 +69,12 @@ border-radius: 3px;}
 .ui-datepicker-next {float: right; font-size: .8em;display: block;}
 .ui-datepicker-prev {float: left; font-size: .8em; display: block;}
 .ui-datepicker-title {;}
+
+/*autocomplete*/
+.ui-autocomplete {width: 292px; background-color: #fff; border: 1px solid #0e3c54;}
+.ui-menu-item {padding: 3px 1px;}
+.ui-menu-item:hover {color: #fff; background-color: #0e3c54; }
+
 
 /*dispaly page*/
 li.nav {margin: 5px;}
@@ -78,4 +90,5 @@ border-radius: 3px;}
 
 div.meta {margin: 10px 0;}
 .shoetitle {border-bottom: 1px solid #333;}
-ul.shoeinfo {float:right; margin-right: 250px;}
+.shoeinfo{float: right;width: 400px;}
+.details {margin-right: 415px; padding-right: 5px;  }
